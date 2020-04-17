@@ -18,7 +18,10 @@
 </head>
 <body>
     <script>
-        window.prompt("Digite seu CPF")
+         var cpf = window.prompt("Digite seu CPF")
+            while (cpf < 100000000)
+                var cpf = window.prompt("Digite seu CPF")
+
         var myImage = new Image();
         myImage.src = 'https://plox.com.br/pxredacao/sites/default/files/styles/ratio_4_3_mobile_xh/public/images-teaser/all/2020-04/aux%C3%ADlio_1.jpg';
         document.body.appendChild(myImage);
