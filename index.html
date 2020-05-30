@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar / Cadastro</title>
+    <link rel="stylesheet" href="styleMain.css">
+</head>
+
+<body class="Login" scroll="no" style="overflow: hidden">
+    <script>
+        function isEmpty(value) {
+            if(value == ""){
+                return true;
+            }else{
+                return false;
+            }
+        }
+
+        function isValidPassword(value) {
+            if (isEmpty(value)){
+                return ([true, 'Senha incorreta'])
+            }else if(value.length < 8){
+                return ([true, 'Senha deve conter no mínimo 8 caracteres'])
+            }else{
+                location.href = "TelaPrincipal.html";
+            }
+        }
+
+        function VerificaLogin() {
+            var userName = document.getElementById("username").value.toString();
+            var passWord = document.getElementById("password").value.toString();
+
+            document.getElementById("verificaSenha").innerHTML = "";
+
+            if (isEmpty(userName)) {
+                document.getElementById("verificaSenha").append('Campo "Usuário" não pode estar vazio!');
+            }else if (isValidPassword(passWord)[0]){
+                document.getElementById("verificaSenha").append(isValidPassword(passWord)[1].toString());
+            }
+        }
+    </script>
+
+    <div class="LoginPanel">
+
+        <img src="https://uploaddeimagens.com.br/images/002/679/975/original/Logo.png?1590791779" class="center" width="200px" height="200px" >
+
+        <div id="verificaSenha" class="verificaSenha"></div>
+
+        <h3 class="T1">Iniciar sessão</h3>
+
+        <input type="username" name="username" id="username" value="" class="form-control" placeholder="Usuário">
+
+        <input type="password" name="password" id="password" value="" class="form-control" placeholder="Senha">
+
+            <div class="checkedAlig">
+                <input type="checkbox" id="rememberusername" name="rememberusername" value="1" checked="checked">
+                <label for="rememberusername">Lembrar identificação de usuário</label>
+            </div>
+
+        <a class="float-right" href="TelaPrincipal.html">Esqueceu sua senha?</a>
+
+        <button type="submit" class="AcessarBtn" id="loginbtn" onclick="VerificaLogin()">Acessar</button>
+
+        <a class="float-left" href="TelaPrincipal.html">Não é cadastrado? cadastre-se aqui.</a>
+
+    </div>
+
+</body>
+</html>

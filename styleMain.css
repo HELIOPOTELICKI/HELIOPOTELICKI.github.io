@@ -1,0 +1,361 @@
+/* Body */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    background-image: url("https://uploaddeimagens.com.br/images/002/664/716/original/BackGround.png?1590097475");
+    background-repeat: no-repeat;
+    background-position: top left;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+body.Login {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+    background-image: url("https://uploaddeimagens.com.br/images/002/680/772/original/BackGroudLogin.png?1590821666");
+    background-repeat: no-repeat;
+    background-position: top left;
+}
+
+/* Header */
+header {
+    font-size: 30px;
+    text-align: center;
+    width: 1450px;
+    height: 150px;
+    padding: 8px;
+    margin: 4px;
+}
+
+button.LoginBT {
+    background-color: rgba(199, 12, 12, 0);
+    border-color: rgba(199, 12, 12, 0);
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 188px;
+    height: 58px;
+    background-image: url("https://uploaddeimagens.com.br/images/002/664/936/original/Button-Login.png?1590106130");
+}
+
+/* Nav's */
+.menuNavSUP ul li {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    height: 50px;   
+    line-height: 50px; 
+    font-size: 22px;
+    position: relative;
+}
+
+.menuNavINF ul li {
+    background-color: #4B0202;
+    top: -11px;
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    height: 60px;  
+    line-height: 60px; 
+    font-size: 22px;
+    position: relative;
+}
+
+.menuNavINF ul ul {
+    display: inline-block;
+    text-align: center;
+    width: 200px;
+    height: 50px;   
+    line-height: 55px; 
+    font-size: 22px;
+    position: relative;
+}
+
+.menuNavSUP ul{
+    padding: 0px;
+}
+
+.menuNavINF ul{
+    padding: 0px;
+}
+
+.menuNavSUP ul li:hover{
+    background-color: #490a0a;
+}
+
+.menuNavINF ul li:hover{
+    background-color: #5a0e0e;
+}
+
+.menuNavINF ul ul {
+    background-color: #4B0202;
+    position: absolute;
+    display: none;
+}
+
+.menuNavINF ul li:hover > ul{
+    display: block;
+    top: 55px;
+}
+
+a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Main */
+main {
+    width: 1600px;
+    height: auto;
+    margin-top: -27px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+div.mainBackground {
+    width: 1600px;
+    height: 900px;
+    margin-top: 0px;
+    background-image: url("https://uploaddeimagens.com.br/images/002/678/532/original/Background-Rain2.gif?1590763768");
+    background-size: 1600px 900px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    -moz-box-shadow:   inset 0px 0px 8px 5px #000000;
+    -webkit-box-shadow:inset 0px 0px 8px 5px #000000;
+    box-shadow:        inset 0px 0px 8px 5px #000000;
+}
+
+#containerAbrigoFT {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+/* Footer */
+footer {
+    background-color: #4B0202;
+    margin-bottom: -20px;
+    font-size: 20px;
+    text-align: center;
+    width: 1920px;
+    height: 150px;
+    padding: 8px;
+    margin-top: 50px;
+}
+
+footer.footerAbrigo {
+    margin-top: 900px;
+}
+
+/* Tabela Abrigos */
+table {
+    padding: 5px;
+    background-color: #4B0202;
+}
+
+thead {
+    font-size: 20px;
+}
+
+.text-center table td {
+    background-color: #4B0202;
+    text-align: center;
+}
+
+table tr td{
+    border: 2px solid #4B0202;
+} 
+
+table tr td:hover{
+    border: 2px solid black;
+} 
+
+table.tableAbrigos {
+    margin-top: 20px;
+}
+
+/* Forecasting */
+#forecasting {
+    align-items: center;
+    margin-top: 100px;
+}
+
+/* Maps */
+#GoogleMaps {
+    width: 1000px; 
+    height: 900px;
+    align-items: center;
+    margin-top: -150px;
+    margin-bottom: -150px;
+}
+
+/* Login */
+div.LoginPanel {
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    background-color: rgb(46, 43, 43);
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    width: 700px;
+    height: 1080px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+h3.T1 {
+    font-size: 30px;
+}
+
+input.form-control {
+    width: 450px;
+    height: 50px;  
+    margin-top: 4px; 
+    margin-bottom: 4px;
+} 
+
+div.checkedAlig {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+input[type=checkbox] {
+    zoom: 1.5;
+    margin-left: 0px;
+}
+
+label {
+    margin-top: 3px;
+}
+
+a.float-right {
+    margin-top: 10px;
+    margin-left: 260px;
+}
+
+a.float-left {
+    margin-top: 100px;
+    margin-left: 0px;
+}
+
+button.AcessarBtn {
+    font-size: 20px;
+    margin-top: 30px;
+    width: 200px;
+    height: 50px;  
+}
+
+::placeholder {
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.637);
+    font-size: 20px;
+}
+
+#username {
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.637);
+    font-size: 20px;
+}
+
+#password {
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.637);
+    font-size: 20px;
+}
+
+#verificaSenha {
+    background-color: rgba(255, 0, 0, 0.116);
+    border: 2px solid rgb(161, 3, 3);
+    text-align: center;
+    padding: 10px;
+}
+
+div.verificaSenha:empty {
+    display: none
+}
+
+/* Tela de Formulario */
+div.formulario {
+    position: relative;
+    margin-top: 100px;
+    background-color: #4B0202;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+    width: 1000px;
+    height: 600px;
+    padding: 8px;
+}
+
+.scrollabletextbox {
+    width: 450px;
+    height: 200px;  
+    margin-top: 4px; 
+    margin-bottom: 4px;
+    padding: 5px;
+    color: rgba(0, 0, 0, 0.637);
+    font-size: 20px;
+    overflow:scroll;
+}
+
+button.FormBTNS {
+    font-size: 20px;
+    margin-top: 30px;
+    width: 150px;
+    height: 50px;  
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+div.BtnsForm {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-around;
+    align-items: center;
+    justify-content: center;
+}
+
+div.CamposForm {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+
+h2.obrigatorios {
+    font-size: 15px;
+    position: absolute;
+    right: 40px;
+    top: 20px;
+}

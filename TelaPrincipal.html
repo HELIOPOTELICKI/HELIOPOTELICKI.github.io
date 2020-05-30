@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styleMain.css">
+    <title>Itaj.AI</title>
+</head>
+<body>
+    <header>
+        Sistema de Monitoramento e Alerta<br>de Eventos Extremos de Blumenau
+        <button id="LoginBT" class="LoginBT"></button>
+            <script type="text/javascript">
+                document.getElementById("LoginBT").onclick = function () {
+                    location.href = "index.html";
+                };
+            </script>
+    </header>
+
+    <nav class="menuNavSUP">
+        <ul>
+            <li><a href="TelaPrincipal.html">Início</a>
+            </li>
+    
+            <li><a href="https://www.blumenau.sc.gov.br/">Blumenau</a>
+            </li>
+
+            <li><a href="#forecastingSelected">Previsão</a>
+            </li>
+
+            <li><a href="#GoogleMaps">Mapa</a>              
+            </li>
+        </ul>
+    </nav>
+
+    <nav class="menuNavINF">
+        <ul>    
+            <li>Defesa Civil</a>
+                <ul>
+                    <li><a href="Abrigos.html">Abrigos</a></li>
+                </ul> 
+            </li>
+
+            <li>Contato</a>  
+                <ul>
+                    <li><a href="TelaFormulario.html">Fale Conosco</a></li>
+                    <li><a href="https://www.instagram.com/helio_potelicky/">Criador</a></li>
+                </ul>            
+            </li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="mainBackground">
+            <div id="forecastingSelected">
+                <iframe id="forecasting" src="BlumenauIFrame.html" width="1000" height="500" frameborder="4" ></iframe>
+            </div>
+        </div>
+
+        <div id="GoogleMaps">
+            <iframe 
+                width="1000px" 
+                height="600px" src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Blumenau+(Blumenau)&amp;ie=UTF8&amp;t=h&amp;z=12&amp;iwloc=B&amp;output=embed"
+                frameborder="4" 
+                scrolling="no" 
+                marginheight="0" 
+                marginwidth="0">
+                <a href="https://www.maps.ie/draw-radius-circle-map/"></a>
+            </iframe>
+        </div>
+    </main>
+
+    <footer>
+        <br>Site em desenvolvimento por Hélio Potelicki, Victor Konder - CEP: 89012.510 - Blumenau/SC - Brasil
+        <br>Contato: (47) 99621-0308 - Email: helio.p2000@hotmail.com
+        <br>Horário de Atendimento: das 18h30 às 22h00
+    </footer>
+</body>
+</html>
